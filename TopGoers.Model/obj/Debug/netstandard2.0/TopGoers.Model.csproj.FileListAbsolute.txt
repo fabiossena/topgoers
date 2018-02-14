@@ -1,0 +1,9 @@
+C:\Users\Sena\source\repos\TopGoers\TopGoers.Model\bin\Debug\netstandard2.0\TopGoers.Model.deps.json
+C:\Users\Sena\source\repos\TopGoers\TopGoers.Model\bin\Debug\netstandard2.0\TopGoers.Model.dll
+C:\Users\Sena\source\repos\TopGoers\TopGoers.Model\bin\Debug\netstandard2.0\TopGoers.Model.pdb
+C:\Users\Sena\source\repos\TopGoers\TopGoers.Model\obj\Debug\netstandard2.0\TopGoers.Model.csprojResolveAssemblyReference.cache
+C:\Users\Sena\source\repos\TopGoers\TopGoers.Model\obj\Debug\netstandard2.0\TopGoers.Model.csproj.CoreCompileInputs.cache
+C:\Users\Sena\source\repos\TopGoers\TopGoers.Model\obj\Debug\netstandard2.0\TopGoers.Model.AssemblyInfoInputs.cache
+C:\Users\Sena\source\repos\TopGoers\TopGoers.Model\obj\Debug\netstandard2.0\TopGoers.Model.AssemblyInfo.cs
+C:\Users\Sena\source\repos\TopGoers\TopGoers.Model\obj\Debug\netstandard2.0\TopGoers.Model.dll
+C:\Users\Sena\source\repos\TopGoers\TopGoers.Model\obj\Debug\netstandard2.0\TopGoers.Model.pdb
