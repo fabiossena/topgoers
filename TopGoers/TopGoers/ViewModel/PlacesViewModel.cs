@@ -127,13 +127,34 @@ namespace TopGoers.ViewModel
             {
                 return;
             }
-            
-            await this.NavigationService.PushModalAsync(new PlaceView(itemTappedEventArgs.Item as Place));
+
+            await ((MainView)App.Current.MainPage).Detail.Navigation.PushAsync(new PlaceView(itemTappedEventArgs.Item as Place));
+            //await this.NavigationService.PushAsync(new PlaceView(itemTappedEventArgs.Item as Place));
         }
 
         private async void Filter(object obj)
         {
-            await NavigationService.PushModalAsync(new FilterView());
+
+            
+            var x = ((MainView)App.Current.MainPage).Detail.Navigation;
+            var root = x.NavigationStack[0];
+            x.InsertPageBefore(new FilterView(), root);
+
+            //x.InsertPageBefore(new FilterView(), new MainViewDetail());
+            await x.PopToRootAsync();
+
+            //await App.Navigation.PushAsync(new FilterView());
+            
+            //NavigationService.InsertPageBefore(new FilterView(), new PlacesView());
+            //NavigationService.PopModalAsync();
+
+            //await NavigationService.NavigateTo(new FilterView());
+            //await NavigationService.PopModalAsync();
+            //await NavigationService.PushModalAsync(new FilterView());
+            //await NavigationService.PopModalAsync(true);
+            //NavigationService.RemovePage(this);
+
+            
         }
     }
 }

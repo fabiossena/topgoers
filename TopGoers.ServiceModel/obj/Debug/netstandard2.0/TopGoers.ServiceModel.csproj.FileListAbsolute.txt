@@ -9,3 +9,14 @@ C:\Users\Sena\source\repos\TopGoers\TopGoers.ServiceModel\obj\Debug\netstandard2
 C:\Users\Sena\source\repos\TopGoers\TopGoers.ServiceModel\obj\Debug\netstandard2.0\TopGoers.ServiceModel.AssemblyInfo.cs
 C:\Users\Sena\source\repos\TopGoers\TopGoers.ServiceModel\obj\Debug\netstandard2.0\TopGoers.ServiceModel.dll
 C:\Users\Sena\source\repos\TopGoers\TopGoers.ServiceModel\obj\Debug\netstandard2.0\TopGoers.ServiceModel.pdb
+C:\Projects\TopGoers\TopGoers.ServiceModel\bin\Debug\netstandard2.0\TopGoers.ServiceModel.deps.json
+C:\Projects\TopGoers\TopGoers.ServiceModel\bin\Debug\netstandard2.0\TopGoers.ServiceModel.dll
+C:\Projects\TopGoers\TopGoers.ServiceModel\bin\Debug\netstandard2.0\TopGoers.ServiceModel.pdb
+C:\Projects\TopGoers\TopGoers.ServiceModel\bin\Debug\netstandard2.0\TopGoers.Model.dll
+C:\Projects\TopGoers\TopGoers.ServiceModel\bin\Debug\netstandard2.0\TopGoers.Model.pdb
+C:\Projects\TopGoers\TopGoers.ServiceModel\obj\Debug\netstandard2.0\TopGoers.ServiceModel.csprojResolveAssemblyReference.cache
+C:\Projects\TopGoers\TopGoers.ServiceModel\obj\Debug\netstandard2.0\TopGoers.ServiceModel.csproj.CoreCompileInputs.cache
+C:\Projects\TopGoers\TopGoers.ServiceModel\obj\Debug\netstandard2.0\TopGoers.ServiceModel.AssemblyInfoInputs.cache
+C:\Projects\TopGoers\TopGoers.ServiceModel\obj\Debug\netstandard2.0\TopGoers.ServiceModel.AssemblyInfo.cs
+C:\Projects\TopGoers\TopGoers.ServiceModel\obj\Debug\netstandard2.0\TopGoers.ServiceModel.dll
+C:\Projects\TopGoers\TopGoers.ServiceModel\obj\Debug\netstandard2.0\TopGoers.ServiceModel.pdb

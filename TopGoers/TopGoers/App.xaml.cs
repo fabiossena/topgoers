@@ -9,14 +9,23 @@ namespace TopGoers
 {
 	public partial class App : Application
 	{
-		public App ()
+        public static INavigation Navigation { get; private set; }
+
+        public App ()
 		{
 			InitializeComponent();
+            
+            MainPage = new TopGoers.View.MainView();
+        }
 
-			MainPage = new TopGoers.View.MainView();
-		}
+        public static Page GetMainPage()
+        {
+            var rootPage = new NavigationPage(new MainPage());
+            Navigation = rootPage.Navigation;
+            return rootPage;
+        }
 
-		protected override void OnStart ()
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

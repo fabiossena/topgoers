@@ -203,11 +203,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj",
+      "projectUniqueName": "C:\\Projects\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj",
       "projectName": "TopGoers.ServiceModel",
-      "projectPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj",
+      "projectPath": "C:\\Projects\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj",
       "packagesPath": "C:\\Users\\Sena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.ServiceModel\\obj\\",
+      "outputPath": "C:\\Projects\\TopGoers\\TopGoers.ServiceModel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -228,8 +228,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj": {
-              "projectPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj"
+            "C:\\Projects\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj": {
+              "projectPath": "C:\\Projects\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj"
             }
           }
         }

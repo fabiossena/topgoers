@@ -764,8 +764,8 @@
       "Xamarin.Android.Support.v7.AppCompat >= 25.4.0.2",
       "Xamarin.Android.Support.v7.CardView >= 25.4.0.2",
       "Xamarin.Android.Support.v7.MediaRouter >= 25.4.0.2",
-      "Xamarin.Forms >= 2.5.0.122203",
-      "Xamarin.Forms.Navigation >= 1.0.1"
+      "xamarin.forms >= 2.5.0.122203",
+      "xamarin.forms.navigation >= 1.0.1"
     ]
   },
   "packageFolders": {
@@ -775,11 +775,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers\\TopGoers.Android\\TopGoers.Android.csproj",
+      "projectUniqueName": "C:\\Projects\\TopGoers\\TopGoers\\TopGoers.Android\\TopGoers.Android.csproj",
       "projectName": "TopGoers.Android",
-      "projectPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers\\TopGoers.Android\\TopGoers.Android.csproj",
+      "projectPath": "C:\\Projects\\TopGoers\\TopGoers\\TopGoers.Android\\TopGoers.Android.csproj",
       "packagesPath": "C:\\Users\\Sena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers\\TopGoers.Android\\obj\\",
+      "outputPath": "C:\\Projects\\TopGoers\\TopGoers\\TopGoers.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -800,11 +800,11 @@
       "frameworks": {
         "monoandroid71": {
           "projectReferences": {
-            "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj": {
-              "projectPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj"
+            "C:\\Projects\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj": {
+              "projectPath": "C:\\Projects\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj"
             },
-            "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj": {
-              "projectPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj"
+            "C:\\Projects\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj": {
+              "projectPath": "C:\\Projects\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj"
             }
           }
         }
@@ -837,11 +837,11 @@
             "target": "Package",
             "version": "[25.4.0.2, )"
           },
-          "Xamarin.Forms": {
+          "xamarin.forms": {
             "target": "Package",
             "version": "[2.5.0.122203, )"
           },
-          "Xamarin.Forms.Navigation": {
+          "xamarin.forms.navigation": {
             "target": "Package",
             "version": "[1.0.1, )"
           }

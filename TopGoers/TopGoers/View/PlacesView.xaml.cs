@@ -25,7 +25,8 @@ namespace TopGoers.View
                 //var mainPage = new MainPage();//this could be content page
                 //var rootPage = new NavigationPage(mainPage);
                 //await rootPage.PushAsync(new PlaceView(item));
-                //App.Current.MainPage.Navigation = rootPage.Navigation;
+  //              PlaceView p = new App.Current.MainPage.Navigation.
+//                App.Current.MainPage.Navigation.PushModalAsync(new PlaceView(item));
                 //await  this.Navigation.PushModalAsync(new PlaceView(item));
             });
 

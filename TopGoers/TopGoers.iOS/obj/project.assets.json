@@ -806,11 +806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers\\TopGoers.iOS\\TopGoers.iOS.csproj",
+      "projectUniqueName": "C:\\Projects\\TopGoers\\TopGoers\\TopGoers.iOS\\TopGoers.iOS.csproj",
       "projectName": "TopGoers.iOS",
-      "projectPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers\\TopGoers.iOS\\TopGoers.iOS.csproj",
+      "projectPath": "C:\\Projects\\TopGoers\\TopGoers\\TopGoers.iOS\\TopGoers.iOS.csproj",
       "packagesPath": "C:\\Users\\Sena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers\\TopGoers.iOS\\obj\\",
+      "outputPath": "C:\\Projects\\TopGoers\\TopGoers\\TopGoers.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -831,11 +831,11 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj": {
-              "projectPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj"
+            "C:\\Projects\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj": {
+              "projectPath": "C:\\Projects\\TopGoers\\TopGoers.Model\\TopGoers.Model.csproj"
             },
-            "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj": {
-              "projectPath": "C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj"
+            "C:\\Projects\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj": {
+              "projectPath": "C:\\Projects\\TopGoers\\TopGoers.ServiceModel\\TopGoers.ServiceModel.csproj"
             }
           }
         }

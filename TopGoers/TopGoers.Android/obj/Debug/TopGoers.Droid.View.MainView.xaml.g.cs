@@ -11,7 +11,7 @@
 namespace TopGoers.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Sena\\source\\repos\\TopGoers\\TopGoers\\TopGoers\\View\\MainView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projects\\TopGoers\\TopGoers\\TopGoers\\View\\MainView.xaml")]
     public partial class MainView : global::Xamarin.Forms.MasterDetailPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
