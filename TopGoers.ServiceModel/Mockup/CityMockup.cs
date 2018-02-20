@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using TopGoers.Model;
 using TopGoers.ServiceModel.Interface;
 
@@ -9,7 +10,7 @@ namespace TopGoers.ServiceModel.Mockup
 {
     public class CityMockup : ICityService
     {
-        public IEnumerable<City> GetAsync(int? stateId)
+        public async Task<IEnumerable<City>> GetAsync(int? stateId)
         {
             if (stateId == null)
             {

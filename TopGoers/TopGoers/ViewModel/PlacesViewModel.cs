@@ -8,6 +8,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using TopGoers.View;
 using Xamarin.Forms.Navigation;
+using System.Threading.Tasks;
 
 namespace TopGoers.ViewModel
 {
@@ -33,7 +34,7 @@ namespace TopGoers.ViewModel
         public PlacesViewModel()
         {
             this.NavigationService = new NavigationService();
-            this.States = new ObservableCollection<State>(this.StateService.GetAsync());
+            this.LoadStates();
 
             this.SearchCommand = new Xamarin.Forms.Command(ExecuteSearch);
             this.StateChangedCommand = new Xamarin.Forms.Command(StateChanged);
@@ -108,15 +109,20 @@ namespace TopGoers.ViewModel
             }
         }
 
-        private void ExecuteSearch(object obj)
+        private async void LoadStates()
         {
-            this.Places = new ObservableCollection<Place>(this.PlaceService.GetAsync(this.SelectedState?.StateId, this.SelectedCity?.CityId, this.Search));
+            this.States = new ObservableCollection<State>(await this.StateService.GetAsync());
+        }
+
+        private async void ExecuteSearch(object obj)
+        {
+            this.Places = new ObservableCollection<Place>(await this.PlaceService.GetAsync(this.SelectedState?.StateId, this.SelectedCity?.CityId, this.Search));
             //ISharedPReferences dadosLocais = Application.Context.GetSharedPreferences("MeuArquivo", Android.Content.FileCreationMode.Private);
         }
 
-        public void StateChanged(object obj)
+        public async void StateChanged(object obj)
         {
-            this.Cities = new ObservableCollection<City>(this.CityService.GetAsync(this.SelectedState?.StateId));
+            this.Cities = new ObservableCollection<City>(await this.CityService.GetAsync(this.SelectedState?.StateId));
             this.SelectedCity = null;
         }
 
@@ -135,7 +141,8 @@ namespace TopGoers.ViewModel
         private async void Filter(object obj)
         {
 
-            
+            var x1 = new Xamarin.Forms.Page();
+            //x1.DisplayActionSheet()
             var x = ((MainView)App.Current.MainPage).Detail.Navigation;
             var root = x.NavigationStack[0];
             x.InsertPageBefore(new FilterView(), root);

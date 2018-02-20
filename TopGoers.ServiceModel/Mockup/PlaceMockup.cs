@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using TopGoers.Model;
 using TopGoers.ServiceModel.Interface;
 
@@ -9,7 +10,7 @@ namespace TopGoers.ServiceModel.Mockup
 {
     public class PlaceMockup : IPlaceService
     {
-        public IEnumerable<Place> GetAsync(int? stateId, int? cityId, string search)
+        public async Task<IEnumerable<Place>> GetAsync(int? stateId, int? cityId, string search)
         {
             int id = 0;
             var result = new[]

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using TopGoers.Model;
 using TopGoers.ServiceModel.Interface;
 
@@ -8,9 +9,9 @@ namespace TopGoers.ServiceModel.Mockup
 {
     public class StateMockup : IStateService
     {
-        public IEnumerable<State> GetAsync()
+        public async Task<IEnumerable<State>> GetAsync()
         {
-            return new[]
+            var result = new[]
             {
                 new State
                 {
@@ -28,6 +29,7 @@ namespace TopGoers.ServiceModel.Mockup
                     Name = "MG"
                 },
             };
+            return result;
         }
     }
 }
