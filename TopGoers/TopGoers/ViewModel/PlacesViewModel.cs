@@ -15,6 +15,7 @@ namespace TopGoers.ViewModel
     public class PlacesViewModel : BaseViewModel, INotifyPropertyChanged
     {
         public ICommand SearchCommand { get; set; }
+        public ICommand SearchCancelCommand { get; set; }
         public ICommand StateChangedCommand { get; set; }
         public ICommand ListPlacesItemTappedCommand { get; set; }
         public ICommand FilterCommand { get; set; }
@@ -29,6 +30,7 @@ namespace TopGoers.ViewModel
         private ObservableCollection<Place> places;
         private State selectedState;
         private City selectedCity;
+        private bool isVisibleFilter;
 
 
         public PlacesViewModel()
@@ -37,6 +39,7 @@ namespace TopGoers.ViewModel
             this.LoadStates();
 
             this.SearchCommand = new Xamarin.Forms.Command(ExecuteSearch);
+            this.SearchCancelCommand = new Xamarin.Forms.Command(SearchCancel);
             this.StateChangedCommand = new Xamarin.Forms.Command(StateChanged);
             this.ListPlacesItemTappedCommand = new Xamarin.Forms.Command(ListPlacesItemTapped);
             this.FilterCommand = new Xamarin.Forms.Command(Filter);
@@ -71,6 +74,16 @@ namespace TopGoers.ViewModel
             {
                 this.cities = value;
                 this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Cities)));
+            }
+        }
+
+        public bool IsVisibleFilter
+        {
+            get => this.isVisibleFilter;
+            set
+            {
+                this.isVisibleFilter = value;
+                this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsVisibleFilter)));
             }
         }
 
@@ -117,7 +130,12 @@ namespace TopGoers.ViewModel
         private async void ExecuteSearch(object obj)
         {
             this.Places = new ObservableCollection<Place>(await this.PlaceService.GetAsync(this.SelectedState?.StateId, this.SelectedCity?.CityId, this.Search));
-            //ISharedPReferences dadosLocais = Application.Context.GetSharedPreferences("MeuArquivo", Android.Content.FileCreationMode.Private);
+            this.SearchCancel(null);
+        }
+
+        private void SearchCancel(object obj)
+        {
+            IsVisibleFilter = false;
         }
 
         public async void StateChanged(object obj)
@@ -140,28 +158,7 @@ namespace TopGoers.ViewModel
 
         private async void Filter(object obj)
         {
-
-            var x1 = new Xamarin.Forms.Page();
-            //x1.DisplayActionSheet()
-            var x = ((MainView)App.Current.MainPage).Detail.Navigation;
-            var root = x.NavigationStack[0];
-            x.InsertPageBefore(new FilterView(), root);
-
-            //x.InsertPageBefore(new FilterView(), new MainViewDetail());
-            await x.PopToRootAsync();
-
-            //await App.Navigation.PushAsync(new FilterView());
-            
-            //NavigationService.InsertPageBefore(new FilterView(), new PlacesView());
-            //NavigationService.PopModalAsync();
-
-            //await NavigationService.NavigateTo(new FilterView());
-            //await NavigationService.PopModalAsync();
-            //await NavigationService.PushModalAsync(new FilterView());
-            //await NavigationService.PopModalAsync(true);
-            //NavigationService.RemovePage(this);
-
-            
+            IsVisibleFilter = true;
         }
     }
 }

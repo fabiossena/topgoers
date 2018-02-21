@@ -13,171 +13,184 @@
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <!--<StackLayout>
-            
-                
-            <Grid
-                Padding="10, 0, 0, 0" 
-                BackgroundColor="DodgerBlue">
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="7*" />
-                    <ColumnDefinition Width="3*" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition  Height="Auto" />
-                    <RowDefinition  Height="Auto" />
+        <AbsoluteLayout>
+
+            <StackLayout>
+
+                <!-- <Grid
+                    Padding="10, 0, 0, 0" 
+                    BackgroundColor="DodgerBlue">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="7*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="Auto" />
+                        <RowDefinition  Height="Auto" />
+                    </Grid.RowDefinitions>
+                
+                    <ContentView 
+                        IsVisible="False"
+                        VerticalOptions="FillAndExpand">
+                        <Label 
+                            Text="Top Goers" 
+                            FontSize="36" 
+                            FontAttributes="Italic" 
+                            TextColor="White" />
+                    </ContentView>
+                
+                    <ContentView 
+                        Grid.Column="1"  
+                        VerticalOptions="FillAndExpand">
+                        <Label 
+                            Text="Do you are a top goer? :D" 
+                            FontSize="12" 
+                            FontAttributes="Italic" 
+                            TextColor="White" />
+                    </ContentView>
+                
+                    <ContentView
+                        Grid.Row="1" 
+                        Grid.ColumnSpan="2" >
+                        <Label 
+                           Text="Buy vouchers for your favorite restaurants!!!" 
+                           FontSize="12"
+                           TextColor="White"
+                           FontAttributes="Italic" />
+                    </ContentView>
+                    <ContentView
+                        Grid.Row="2" 
+                        BackgroundColor="WhiteSmoke"
+                        Grid.ColumnSpan="2" >
+                        <Label 
+                           Text="Filters" 
+                           FontSize="10"
+                           TextColor="Silver"/>
+                    </ContentView>
+                </Grid>
+                -->
+                
+                
+                <Grid>
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                
-                <ContentView 
-                    IsVisible="False"
-                    VerticalOptions="FillAndExpand">
-                    <Label 
-                        Text="Top Goers" 
-                        FontSize="36" 
-                        FontAttributes="Italic" 
-                        TextColor="White" />
-                </ContentView>
-                
-                <ContentView 
-                    Grid.Column="1"  
-                    VerticalOptions="FillAndExpand">
-                    <Label 
-                        Text="Do you are a top goer? :D" 
-                        FontSize="12" 
-                        FontAttributes="Italic" 
-                        TextColor="White" />
-                </ContentView>
-                
-                <ContentView
-                    Grid.Row="1" 
-                    Grid.ColumnSpan="2" >
-                    <Label 
-                       Text="Buy vouchers for your favorite restaurants!!!" 
-                       FontSize="12"
-                       TextColor="White"
-                       FontAttributes="Italic" />
-                </ContentView>
-                <ContentView
-                    Grid.Row="2" 
-                    BackgroundColor="WhiteSmoke"
-                    Grid.ColumnSpan="2" >
-                    <Label 
-                       Text="Filters" 
-                       FontSize="10"
-                       TextColor="Silver"/>
-                </ContentView>
-            </Grid>
-            -->
-            <!--
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2*" />
-                    <ColumnDefinition Width="4*" />
-                    <ColumnDefinition Width="4*" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Picker 
-                    x:Name="PickerState"
-                    ItemsSource="{Binding States}"
-                    ItemDisplayBinding="{Binding Name}"
-                    SelectedItem="{Binding SelectedState, Mode=TwoWay}"
-                    Title="State"
-                    Grid.Column="0" 
-                    Grid.Row="0" >
-                    <Picker.Behaviors>
-                        <behaviors:EventHandlerBehavior EventName="SelectedIndexChanged">
-                            <behaviors:InvokeCommandAction Command="{Binding StateChangedCommand}" />
-                        </behaviors:EventHandlerBehavior>
-                    </Picker.Behaviors>
-                </Picker>
-                <!-
-                    controls:Bindable
-                    SelectedIndexChanged="{Binding StateChangedCommand, Mode=TwoWay}"
-                ->
-                <Picker 
-                    ItemsSource="{Binding Cities}"
-                    ItemDisplayBinding="{Binding Name}"
-                    SelectedItem="{Binding SelectedCity, Mode=TwoWay}"
-                    Title="City"
-                    Grid.Column="1" 
-                    Grid.Row="0" 
-                    Grid.ColumnSpan="2" />
-                
-                <Entry Text="{Binding Search}" 
-                       Placeholder="Search"
-                       Grid.Column="0" 
-                       Grid.Row="1" 
-                       Grid.ColumnSpan="2" />
-                <!-AbsoluteLayout.LayoutBounds=".5,350,160,60" 
-                        AbsoluteLayout.LayoutFlags="XProportional" 
-                        BorderRadius="30" 
-                        ->
-                <Button BackgroundColor="{StaticResource Primary}" 
-                        TextColor="White" 
-                        Text="Search" 
-                        Command="{Binding SearchCommand}" 
-                        Grid.Column="2" 
-                        Grid.Row="1">
-                    <!-<Button.Image>
-                        <OnPlatform                             
-                            x:TypeArguments="FileImageSource"
-                            Android="Search.png" />
-                    </Button.Image>->
-                </Button>
-                <!-
-                <Button Command="{Binding SearchCommand}" 
-                        Text="Search" 
-                        Grid.Column="2" 
-                        Grid.Row="1"
-                        BackgroundColor="{StaticResource Primary}" 
-                        TextColor="White"/>
-                ->
-            </Grid>
-            -->
 
-            <Grid>
-                <Grid.RowDefinitions>
-                <RowDefinition Height="25" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-
-            <StackLayout BackgroundColor="WhiteSmoke"
-                         HorizontalOptions="Fill"
-                         VerticalOptions="Fill"></StackLayout>
-            <Label Text="Filter" 
-                   FontSize="Small" 
-                   Margin="0, 2, 4, 0"
-                   HorizontalTextAlignment="End" 
-                   BackgroundColor="Transparent"
-                   TextColor="Silver" />
-            <Button Command="{Binding FilterCommand}"
+                    <StackLayout 
+                        BackgroundColor="WhiteSmoke"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Fill" />
+                    <Label 
+                        Text="Filter" 
+                        FontSize="Small" 
+                        Margin="0, 2, 4, 0"
+                        HorizontalTextAlignment="End" 
+                        BackgroundColor="Transparent"
+                        TextColor="Silver" />
+                    
+                <Button 
+                    Command="{Binding FilterCommand}"
                     Margin="-9"
                     Opacity="0"
                     VerticalOptions="Fill" 
                     HorizontalOptions="Fill" />
 
-            <ListView Grid.Row="1" ItemsSource="{Binding Places}" x:Name="ListPlaces">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout HorizontalOptions="StartAndExpand">
-                                    <Label Text="{Binding Name}" />
-                                </StackLayout>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                    <ListView.Behaviors>
-                        <behaviors:EventHandlerBehavior EventName="ItemTapped">
-                            <behaviors:InvokeCommandAction Command="{Binding ListPlacesItemTappedCommand}" />
-                        </behaviors:EventHandlerBehavior>
-                    </ListView.Behaviors>
-                </ListView>
-            </Grid>
+                <ListView Grid.Row="1" ItemsSource="{Binding Places}" x:Name="ListPlaces">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Label Text="{Binding Name}" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.Behaviors>
+                            <behaviors:EventHandlerBehavior EventName="ItemTapped">
+                                <behaviors:InvokeCommandAction Command="{Binding ListPlacesItemTappedCommand}" />
+                            </behaviors:EventHandlerBehavior>
+                        </ListView.Behaviors>
+                    </ListView>
+                </Grid>
 
-        <!--</StackLayout>-->
+        
+            </StackLayout>
+
+            <ContentView
+                   
+                   AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   IsVisible="{Binding IsVisibleFilter}"
+                   BackgroundColor="#C0808080">
+
+                <StackLayout 
+                     Orientation="Vertical"
+                     BackgroundColor="White"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Start"
+                     Margin="0,5,0,0"
+                     Padding="5">
+
+                    <Picker 
+                        x:Name="PickerState"
+                        ItemsSource="{Binding States}"
+                        ItemDisplayBinding="{Binding Name}"
+                        SelectedItem="{Binding SelectedState, Mode=TwoWay}"
+                        Title="State">
+                        <Picker.Behaviors>
+                            <behaviors:EventHandlerBehavior EventName="SelectedIndexChanged">
+                                <behaviors:InvokeCommandAction Command="{Binding StateChangedCommand}" />
+                            </behaviors:EventHandlerBehavior>
+                        </Picker.Behaviors>
+                    </Picker>
+                        
+                    <Picker 
+                        ItemsSource="{Binding Cities}"
+                        ItemDisplayBinding="{Binding Name}"
+                        SelectedItem="{Binding SelectedCity, Mode=TwoWay}"
+                        Title="City"/>
+
+
+                    <Entry Text="{Binding Search}" 
+                           Placeholder="Type a search" />
+                    <!-- AbsoluteLayout.LayoutBounds=".5,350,160,60" 
+                            AbsoluteLayout.LayoutFlags="XProportional" 
+                            BorderRadius="30" 
+                            -->
+
+                    <StackLayout 
+                        Orientation="Horizontal"
+                        HorizontalOptions="Center">
+
+                            <!-- AbsoluteLayout.LayoutBounds=".5,350,160,60" 
+                            AbsoluteLayout.LayoutFlags="XProportional" 
+                            BorderRadius="30" 
+                            -->
+                        <Button BackgroundColor="{StaticResource Primary}" 
+                                TextColor="White" 
+                                Text="Cancel" 
+                                Command="{Binding SearchCancelCommand}" />
+
+                        <Button 
+                            BackgroundColor="{StaticResource Primary}" 
+                            TextColor="White" 
+                            Text="Apply" 
+                            Command="{Binding SearchCommand}">
+                            <!--
+                            <Button.Image>
+                                <OnPlatform                             
+                                x:TypeArguments="FileImageSource"
+                                Android="Search.png" />
+                            </Button.Image> -->
+                        </Button>
+                    </StackLayout>
+                </StackLayout>
+            </ContentView>
+            
+        </AbsoluteLayout>
+        
     </ContentPage.Content>
 </ContentPage>

@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TopGoers.View.MainView"
              xmlns:pages="clr-namespace:TopGoers.View">
-  <MasterDetailPage.Master>
-    <pages:MainViewMaster x:Name="MasterPage" />
+<MasterDetailPage.Master>
+<pages:MainViewMaster x:Name="MasterPage" />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
     <NavigationPage>
@@ -12,5 +12,6 @@
         <pages:MainViewDetail />
       </x:Arguments>
     </NavigationPage>
-  </MasterDetailPage.Detail>
+  </MasterDetailPage.Detail>>
+
 </MasterDetailPage>
